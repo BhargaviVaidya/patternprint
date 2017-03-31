@@ -1,0 +1,17 @@
+public class assignment4 {
+
+	public static void main(String[] args) {
+		printPyramidMirror( 3 );
+	}
+	
+	static void printPyramidMirror( int iHeight )
+	{
+		for (int i = 0; i < iHeight; i++) {
+			for (int j = 0; j < iHeight - i; j++) { 
+				System.out.print(" ");
+				}
+			for (int k = 0; k <= i; k++) {
+				System.out.print("1 "); 
+				}
+			System.out.println(); 
+			}}}
