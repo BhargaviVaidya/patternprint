@@ -1,0 +1,33 @@
+#palindrome
+package palindrome;
+import java.util.Scanner;
+
+public class assignment5 {
+
+	public static void main(String[] args) {		
+		
+		do {
+			String original,original1, reverse = "";
+		      Scanner in = new Scanner(System.in);
+		 
+		      System.out.println("Please enter a word");
+		      original = in.nextLine();
+		      original1=original.toLowerCase().replaceAll("\\W", "");
+		      int length = original1.length();
+		 
+		      for ( int i = length - 1; i >= 0; i-- )
+		         reverse = reverse + original1.charAt(i);
+		 
+		      if (original1.equalsIgnoreCase(reverse)) {
+		    	  System.out.println(original+" is a palindrome.");
+		    	 
+			} else if (original1.equalsIgnoreCase("exit")) {
+				break;
+				
+			}else {
+				System.out.println(original+" is not a palindrome.");
+				
+			}
+		} while (true); 
+		}
+}
